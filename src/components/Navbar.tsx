@@ -46,7 +46,7 @@ export function Navbar() {
             ))}
           </svg>
           <span className="font-display font-bold text-primary tracking-wider text-sm sm:text-base">
-            MECHANICAL DRAFTER
+            ADJI NUR FADILAH
           </span>
         </a>
 
