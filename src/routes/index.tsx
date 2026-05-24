@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { SectionHeader } from "@/components/SectionHeader";
+import { withBaseUrl } from "@/lib/utils";
 import {
   GearDecor,
   BearingSketch,
@@ -19,19 +20,19 @@ export const Route = createFileRoute("/")({
 const skills = [
   {
     name: "SolidWorks",
-    logo: "/logos/SolidWorks.png",
+    logo: withBaseUrl("logos/SolidWorks.png"),
   },
   {
     name: "AutoCAD",
-    logo: "/logos/AutoCad.png",
+    logo: withBaseUrl("logos/AutoCad.png"),
   },
   {
     name: "MATLAB",
-    logo: "/logos/Matlab.png",
+    logo: withBaseUrl("logos/Matlab.png"),
   },
   {
     name: "Microsoft Office",
-    logo: "/logos/MicrosoftOffice.png",
+    logo: withBaseUrl("logos/MicrosoftOffice.png"),
   },
 ];
 
@@ -39,8 +40,8 @@ const projects = [
   {
     title: "Horizontal Axis Wind Turbine (TASH)",
     images: [
-      "/projects/Horizontal_Axis_Wind_Turbine_(TASH).png",
-      "/projects/Horizontal_Axis_Wind_Turbine_(TASH)2.jpg",
+      withBaseUrl("projects/Horizontal_Axis_Wind_Turbine_(TASH).png"),
+      withBaseUrl("projects/Horizontal_Axis_Wind_Turbine_(TASH)2.jpg"),
     ],
     desc: "Participated in a final-year project on Horizontal Axis Wind Turbines (HAWT), focusing on the design and development of horizontal-axis wind turbine systems. Contributed to the mechanical design process, the creation of technical drawings, component assembly, and turbine performance testing to support the efficient conversion of wind energy into electrical energy. This project also involved the use of engineering design software and an understanding of mechanical and electrical systems in renewable energy generation.",
     tech: "SolidWorks · Assembly Design · MATLAB · GD&T",
@@ -48,8 +49,8 @@ const projects = [
   {
     title: "Hydraulic Power Unit 1000L",
     images: [
-      "/projects/HPU_1000L.png",
-      "/projects/HPU_1000L2.jpeg",
+      withBaseUrl("projects/HPU_1000L.png"),
+      withBaseUrl("projects/HPU_1000L2.jpeg"),
     ],
     desc: "Worked on the 1000L Hydraulic Power Unit (HPU) project at PT Ide Bengkel Intinusa while serving as a Drafter. Responsible for creating and revising 2D/3D technical drawings, preparing fabrication and assembly details, and supporting the hydraulic system design process in accordance with production requirements and the company’s technical standards. This project also involved coordinating with the engineering and workshop teams to ensure the design could be properly implemented on-site.",
     tech: "SolidWorks · Assembly Drawing · Hydraulic · GD&T",
@@ -57,8 +58,8 @@ const projects = [
   {
     title: "Cylinder TC HT 100-116 R56",
     images: [
-      "/projects/Cylinder_TC_HT_100-116_R56.jpg",
-      "/projects/Cylinder_TC_HT_100-116_R562.jpg",
+      withBaseUrl("projects/Cylinder_TC_HT_100-116_R56.jpg"),
+      withBaseUrl("projects/Cylinder_TC_HT_100-116_R562.jpg"),
     ],
     desc: "Worked on the Cylinder TC HT 100-116 R56 project at PT Ide Bengkel Intinusa while serving as a Drafter. Responsible for creating technical drawings, revising designs, and developing fabrication details for hydraulic cylinder components in accordance with engineering specifications and production requirements. Additionally, coordinated with the engineering and production teams to ensure the accuracy of designs, dimensions, and on-site assembly processes.",
     tech: "SolidWorks · Assembly Drawing · Hydraulic · GD&T",
